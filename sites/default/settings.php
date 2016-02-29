@@ -714,9 +714,9 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# if (file_exists(__DIR__ . '/settings.local.php')) {
-#   include __DIR__ . '/settings.local.php';
-# }
+ if (file_exists(__DIR__ . '/settings.local.php')) {
+   include __DIR__ . '/settings.local.php';
+ }
 $databases['default']['default'] = array (
   'database' => 'drupal_dev_8_0_4',
   'username' => 'root',
@@ -729,3 +729,6 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_0TNaaRaTEl111uvtMsMkzdJOAAXFZrQCjs58xrhVd6MJrLrc9ql9Sr0QHDod6D3hh7FC37HmJw/sync';
+//$settings['trusted_host_patterns'] = array(
+//  '^www\.drupal-8-dev\.com$',
+//);

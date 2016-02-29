@@ -1,0 +1,7 @@
+transcode_profile.admin_settings_from:
+  title: 'form upanh'
+  route_name: transcode_profile.admin_settings_from
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+

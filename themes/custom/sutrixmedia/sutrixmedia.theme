@@ -1,0 +1,20 @@
+<?php
+use Drupal\file\Entity\File;
+use Drupal\image\Entity\ImageStyle;
+
+function sutrixmedia_preprocess_html(&$variables){
+  $variables['tempale_root'] = drupal_get_path('theme','sutrixmedia');
+}
+
+function sutrixmedia_preprocess_page(&$variables){
+  $variables['tempale_root'] = drupal_get_path('theme','sutrixmedia');
+  $slide = \Drupal::config('transcode_profile.adminsettingsfrom');
+  $files = $slide->get('upload_image');
+  foreach($files as $value){
+    $file = File::load($value);
+    $variables['slide_block'][] = ImageStyle::load('medium')->buildUrl($file->getFileUri());
+  }
+//  $variables['slie_block'] = $variables['slie_block']->values;
+          
+}
+

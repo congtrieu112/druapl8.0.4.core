@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+sutrixgroup.com	TRUE	/	FALSE	1999999999	PHPSESSID	rf3nc3g0ag4ipts4uotoa0q232
+sutrixgroup.com	TRUE	/	FALSE	1999999999	_icl_current_language	ja
+
