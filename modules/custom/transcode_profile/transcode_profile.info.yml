@@ -1,5 +1,0 @@
-name: Transcode Profile
-type: module
-description: Video transcode manager
-core: 8.x
-package: Custom

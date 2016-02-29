@@ -1,4 +1,0 @@
-services:
-    dino_roar.roar_create:
-        class: Drupal\dino_roar\Service\ServiceCustom
-        
