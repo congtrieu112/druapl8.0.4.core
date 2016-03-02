@@ -1,0 +1,15 @@
+name: startbootstrap
+type: theme
+description: startbootstrap basic template
+package: custom
+core: 8.x
+libraries:
+  - startbootstrap/global-css
+  - startbootstrap/global-js
+base theme: block_test_specialchars_theme
+
+regions:
+  content: Content
+  header: header
+  footer: footer
+  side_bar: side bar

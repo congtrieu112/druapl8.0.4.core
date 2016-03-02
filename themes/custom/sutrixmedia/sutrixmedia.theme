@@ -7,14 +7,24 @@ function sutrixmedia_preprocess_html(&$variables){
 }
 
 function sutrixmedia_preprocess_page(&$variables){
+//   $block = \Drupal\block\Entity\Block::load('views_block__home_slides_block_1');
+//   $block_content = \Drupal::entityManager()
+//  ->getViewBuilder('block')
+//  ->view($block);
+   $variables['block_slide'] = $block_content;
   $variables['tempale_root'] = drupal_get_path('theme','sutrixmedia');
-  $slide = \Drupal::config('transcode_profile.adminsettingsfrom');
-  $files = $slide->get('upload_image');
-  foreach($files as $value){
-    $file = File::load($value);
-    $variables['slide_block'][] = ImageStyle::load('medium')->buildUrl($file->getFileUri());
-  }
+ 
+
+
+//  $slide = \Drupal::config('transcode_profile.adminsettingsfrom');
+//  $files = $slide->get('upload_image');
+//  foreach($files as $value){
+//    $file = File::load($value);
+//    $variables['slide_block'][] = ImageStyle::load('medium')->buildUrl($file->getFileUri());
+//  }
 //  $variables['slie_block'] = $variables['slie_block']->values;
+
           
 }
+
 
