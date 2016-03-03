@@ -39,11 +39,11 @@ function startbootstrap_page_attachments_alter(array &$page) {
  */
 function startbootstrap_preprocess_page(array &$variables) {
   $variables['theme_path'] = drupal_get_path('theme', 'startbootstrap');
-  $block = \Drupal\block\Entity\Block::load('yourfavoritesourceoffreebootstrapthemes');
-  $block_content = \Drupal::entityManager()
-                    ->getViewBuilder('block')
-                    ->view($block);
-  $variables['block_two'] = $block_content;
+//  $block = \Drupal\block\Entity\Block::load('yourfavoritesourceoffreebootstrapthemes');
+//  $block_content = \Drupal::entityManager()
+//                    ->getViewBuilder('block')
+//                    ->view($block);
+//  $variables['block_two'] = $block_content;
 
 }
 

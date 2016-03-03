@@ -718,11 +718,11 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
    include __DIR__ . '/settings.local.php';
  }
 $databases['default']['default'] = array (
-  'database' => 'drupal_dev_8_0_4',
+  'database' => 'druapl_8_dev',
   'username' => 'root',
-  'password' => '872951',
+  'password' => '',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => '127.0.0.1',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
